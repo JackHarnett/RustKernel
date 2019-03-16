@@ -1,0 +1,17 @@
+[package]
+name = "rust_os"
+version = "0.1.0"
+authors = ["jack <jackery4444@hotmail.co.uk>"]
+edition = "2018"
+
+[dependencies]
+bootloader = "0.4.0"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+
+[package.metadata.bootimage]
+default-target = "tgt.json"

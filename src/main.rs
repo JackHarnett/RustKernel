@@ -9,8 +9,6 @@ use core::panic::PanicInfo;
 use colours::{Colour, ColourCode};
 use crate::text_buffer::{TextWriter, ScreenBuffer};
 
-static HELLO : &[u8] = b"Jack's Kernel!!!!";
-
 
 #[panic_handler] 
 fn panic_handler(_info : &PanicInfo) -> ! {

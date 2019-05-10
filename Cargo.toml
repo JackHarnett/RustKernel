@@ -5,7 +5,8 @@ authors = ["jack <jackery4444@hotmail.co.uk>"]
 edition = "2018"
 
 [dependencies]
-bootloader = "0.4.0"
+bootloader = "0.6.0"
+volatile = "0.2.3"
 
 [profile.dev]
 panic = "abort"
@@ -15,3 +16,6 @@ panic = "abort"
 
 [package.metadata.bootimage]
 default-target = "tgt.json"
+
+[target.'cfg(target_os = "none")']
+runner = "bootimage runner"

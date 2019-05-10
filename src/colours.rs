@@ -24,6 +24,7 @@ pub enum Colour {
 
 // Represents a colour as 8 bits. 
 #[repr(transparent)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub struct ColourCode(pub u8);
 
 impl ColourCode {
